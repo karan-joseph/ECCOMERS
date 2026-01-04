@@ -15,8 +15,8 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
     background-color:palegoldenrod;
-    width: 100%;
     top: 0%;
+    height: 50px;
 }
 .navbar h1{
     color: red;
@@ -60,13 +60,20 @@
 .side_navbar-link a:hover{
     text-decoration: underline;
 }
-/* header */
-.header{
-    display: flex;
-    justify-content: center;
-    padding: 50px;
-    gap: 10px;
-    
+/* header */.header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* oru row-la 4 images */
+    gap: 20px;
+    padding: 20px;
+}
+
+.header_container {
+    text-align: center;
+}
+
+.header_container img {
+    width: 70%;
+    height: 250px;
 }
 .header_shop{
     background-color: black;
@@ -88,21 +95,8 @@
     margin-top: 10px;
     cursor: pointer;
 }
-.header_detial{
-    background-color: rgb(215, 218, 221);
-    width: 85%;
-    padding: 10px;
-    border-radius: 10px;
-    gap: 10px;
-    padding-left: 10%;
+    
 
-}
-.header img{
-    height: 500px;
-    width:450px;
-    cursor: pointer;
-    z-index: 2;
-}
 /* new collection */
 .new_collection{
     display: flex;
@@ -179,27 +173,13 @@ padding: 15px;
         display: none;
     }
 
-  .header {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .header > div {
-    width: 100%;
-    text-align: center;
-  }
-
-  .header > div:nth-child(even) {
-    order: 1;
-  }
-
-  .header > div:nth-child(odd) {
-    order: 2;
-  }
-
+.header {
+        grid-template-columns:repeat(2,1fr);  /* mobile */
+}
 
     .customer_review{
         flex-direction: column;
         padding: 2px;
     }
+
 }

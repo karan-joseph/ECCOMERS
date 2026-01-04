@@ -165,7 +165,7 @@ padding: 15px;
 
 
 /* media */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .navbar-menu-icon {
         display: block;
     }

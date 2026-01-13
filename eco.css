@@ -8,8 +8,7 @@
   font-style: normal;
 }
 .navbar{
-    display: flex;
-    justify-content: space-between;
+    display: flex;  
     align-items: center;
     padding: 7px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -23,10 +22,39 @@
     text-decoration: underline;
     
 }
+
+.navbar-search {
+    position: relative;
+    width: 300px;
+    margin-left: 20px;
+}
+
+.navbar-search input {
+    width: 339%;
+    padding: 8px 40px 8px 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.navbar-search i {
+    position: absolute;
+    right: 12px;
+    left: 347%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555;
+    cursor: pointer;
+}
+
+
+
 .navbar-links{
     display: flex;
     column-gap: 10px;
+    margin-left: auto;   /* ⭐ MAGIC LINE */
 }
+
 .navbar-links a{
     text-decoration: none;
     color: darkslategrey;
@@ -36,6 +64,7 @@
 }
 .navbar-menu-icon {
     display: none;
+    cursor: pointer;
 }
 /*side_navbar*/
 .side_navbar{
@@ -49,6 +78,7 @@
     border-radius: 10px;
     color: white;
     transition: 0.4s;
+    cursor: pointer;
 }
 .side_navbar-link{
     margin-bottom: 20px;
@@ -80,8 +110,8 @@
     color: white;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-top: 10px;
     cursor: pointer;
 }
@@ -90,8 +120,8 @@
     color: white;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-top: 10px;
     cursor: pointer;
 }
